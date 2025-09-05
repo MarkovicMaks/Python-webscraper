@@ -11,9 +11,6 @@ import boto3
 from botocore.exceptions import ClientError
 from io import BytesIO
 
-# =============================================================================
-# AWS S3 CONFIGURATION - UPDATE THESE WITH YOUR VALUES!
-# =============================================================================
 AWS_ACCESS_KEY_ID = "NO"
 AWS_SECRET_ACCESS_KEY = "NO"
 S3_BUCKET_NAME = "gene-expression-data-mm"
@@ -266,5 +263,4 @@ if uploaded_files:
 
 driver.quit()
 
-print("\n🎉 Phase 2 Complete: All TSV files streamed to S3!")
-print("Next: Process gene expression data and load into MongoDB")
+print("\n Phase 2 Complete: All TSV files streamed to S3!")
