@@ -11,6 +11,7 @@ options.headless = True
 
 #tu promjeni path do svojeg chrome drivera
 chrome_driver_path = 'C:/Users/Korisnik/Desktop/chromedriver-win64/chromedriver.exe'
+
 service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service, options=options)
 
